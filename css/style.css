@@ -1,0 +1,142 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.todo {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 100%;
+  background: white;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-transform: uppercase;
+  background: #95a0b6;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px 28px;
+  font-weight: normal;
+}
+
+.todo__input {
+  position: relative;
+}
+
+.todo__add-item {
+  outline: none;
+  background: white;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+  color: gray;
+  border-width: 0;
+  border-bottom: 1px solid gray;
+}
+
+.todo__add-button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 26px;
+  width: 26px;
+  background-color: #86a8e7;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in;
+  margin: 0;
+}
+
+.todo__add-button:hover {
+  background-color: #668cd3;
+}
+
+.todo__add-button::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23fff' d='M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z' class=''%3E%3C/path%3E%3C/svg%3E");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.todo__items li {
+  background: #f7f7f7;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.todo__items li:nth-child(2n) {
+  background: #e7ecf0;
+}
+
+.fa-trash-alt {
+  color: #000000;
+  margin-top: 16px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.fa-trash-alt:hover {
+  color: #7a7a85;
+}
+
+.checked {
+  color: gray;
+  text-decoration: line-through;
+}
+
+button {
+  background-color: #86a8e7;
+  border: 2px solid #86a8e7;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 10px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4870bb;
+  border: 2px solid #4870bb;
+}
+
+.todo__buttons {
+  text-align: center;
+}

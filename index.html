@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="todo">
+            <h1>Your todolist</h1>
+            <div class="todo__input">
+                <input class="todo__add-item" type="text" placeholder="Add todo">
+                <p class="todo__add-button"></p>
+              </div>
+            <ul class="todo__items">
+
+                <li><span class="todo__items_text">Todo 1</span><i class="fas fa-trash-alt"></i></li>
+                <li><span class="todo__items_text">Todo 2</span><i class="fas fa-trash-alt"></i></li>
+                <li><span class="todo__items_text">Todo 3</span><i class="fas fa-trash-alt"></i></li>
+
+            </ul>
+            <div class="todo__buttons">
+                <button class="button todo__buttons_save">Save</button>
+                <button class="button todo__buttons_clear">Clear</button>
+                <button class="button todo__buttons_get">Get prepared todolist</button>
+                <button class="button todo__buttons_set"><a href="list.html">Show saved todolist</a></button>
+                
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+
+</html>
